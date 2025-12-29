@@ -1,5 +1,9 @@
 // import Image from "next/image";
-import Navbar from "./Components/Home/Navbar/Navbar";
+import TheRoster from "./Components/Home/TheRoster/TheRoster";
+import Community from "./Components/Home/Community/Community";
+import Subscribe from "./Components/Home/Subscribe/Subscribe"
+import Shop from "./Components/Home/Shop/Shop"
+
 
 
 
@@ -7,7 +11,10 @@ import Navbar from "./Components/Home/Navbar/Navbar";
 export default function Home() {
   return (
     <>
-<Navbar />
+    <Shop />
+    <Subscribe />
+    <Community />
+    <TheRoster />
 
 
     </>

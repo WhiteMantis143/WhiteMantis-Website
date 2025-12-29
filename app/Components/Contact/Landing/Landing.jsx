@@ -109,7 +109,7 @@ const Landing = () => {
                     />
                   </svg>
                 </div>
-                <div className={styles.socialTwo}>
+                {/* <div className={styles.socialTwo}>
                   <p>Linkedin </p>
                   <svg
                     width="8"
@@ -180,7 +180,7 @@ const Landing = () => {
                       stroke="#6E736A"
                     />
                   </svg>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
