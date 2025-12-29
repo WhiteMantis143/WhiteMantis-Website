@@ -1,0 +1,115 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-right: 500px;
+  padding-left: 500px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.privacy h3 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: flex-start;
+  font-size: var(--fs-48);
+  color: black;
+}
+
+.topContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: black;
+  
+}
+.spantext{
+  cursor: pointer;
+  color: #000000;
+  font-size: var(--fs-20);
+
+}
+.spantexttwo{
+  cursor: pointer;
+  color: #424243;
+  font-size: var(--fs-20);
+  text-decoration: underline;
+}
+.textheadings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.listcontent {
+  color: black;
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0;
+}
+
+.listcontent li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: var(--fs-18);
+  font-weight: 500;
+  color: #000000;
+}
+
+
+.privacy p {
+  color: black;
+  line-height: 1.7;
+  margin: 0;
+  font-size: var(--fs-24);
+  font-weight: 500;
+  color: #000000;
+}
+
+
+@media (max-width: 1440px) {
+  .mainPage {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainPage {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainPage {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}

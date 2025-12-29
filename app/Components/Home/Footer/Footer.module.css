@@ -1,0 +1,98 @@
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #6C7A5F;
+    padding: 50px 54px 41.71px 60px;
+}
+.MainConatiner{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 66.59px;
+}
+.Bottom{
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    padding-left: 5px;
+}
+.Top{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    gap: 150px;
+
+}
+.One{
+display: flex;
+justify-content: left;
+}
+.One img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 75px;
+    max-height: 75px;
+    cursor: pointer;
+}
+.Two{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: left;
+}
+.TwoTop{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.TwoTop h3{
+    font-size: 22px;
+    font-family: var(--lexend);
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.TwoTop p{
+    font-size: 15px;
+    font-family: var(--lato);
+    color: #FFFFFF;
+    font-weight: 400;
+
+}
+.TwoBottom{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.TwoBottomTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.TwoBottomTop h3{
+    font-size: 22px;
+    font-family: var(--lexend);
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.TwoBottomBottom{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.TwoBottomBottom p{
+    font-size: 15px;
+    font-family: var(--lato);
+    color: #FFFFFF;
+    font-weight: 400;
+}
