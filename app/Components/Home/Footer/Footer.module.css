@@ -5,7 +5,12 @@
     width: 100%;
     height: 100%;
     background-color: #6C7A5F;
-    padding: 50px 54px 41.71px 60px;
+   padding:
+  clamp(20px, calc(20px + (30 * ((100vw - 320px) / 1120))), 50px)
+  clamp(25px, calc(25px + (29 * ((100vw - 320px) / 1120))), 54px)
+  clamp(20px, calc(20px + (21.71 * ((100vw - 320px) / 1120))), 41.71px)
+  clamp(25px, calc(25px + (35 * ((100vw - 320px) / 1120))), 60px);
+
 }
 .MainConatiner{
     display: flex;
@@ -13,7 +18,8 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
-    gap: 66.59px;
+   gap: clamp(30px, calc(30px + (36.59 * ((100vw - 320px) / 1120))), 66.59px);
+
 }
 .Bottom{
     width: 100%;
@@ -25,7 +31,8 @@
     display: flex;
     justify-content: left;
     flex-direction: row;
-    gap: 150px;
+   gap: clamp(25px, calc(25px + (125 * ((100vw - 320px) / 1120))), 150px);
+
 
 }
 .One{
@@ -33,32 +40,42 @@ display: flex;
 justify-content: left;
 }
 .One img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
     max-width: 75px;
+    min-width: 60px;
+    min-height: 60px;
     max-height: 75px;
     cursor: pointer;
 }
 .Two{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+   gap: clamp(15px, calc(15px + (15 * ((100vw - 320px) / 1120))), 30px);
+
     justify-content: left;
 }
 .TwoTop{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
 }
-.TwoTop h3{
-    font-size: 22px;
+.TwoTopTop h3{
+    font-size: var(--fs-22);
     font-family: var(--lexend);
     color: #FFFFFF;
     font-weight: 500;
     text-transform: uppercase;
 }
-.TwoTop p{
+.TwoTopBottom{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.TwoTopBottom p{
     font-size: 15px;
     font-family: var(--lato);
     color: #FFFFFF;
@@ -68,7 +85,8 @@ justify-content: left;
 .TwoBottom{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+   gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
 }
 .TwoBottomTop{
     display: flex;
@@ -76,7 +94,7 @@ justify-content: left;
     justify-content: left;
 }
 .TwoBottomTop h3{
-    font-size: 22px;
+    font-size: var(--fs-22);
     font-family: var(--lexend);
     cursor: pointer;
     color: #FFFFFF;
@@ -95,4 +113,147 @@ justify-content: left;
     font-family: var(--lato);
     color: #FFFFFF;
     font-weight: 400;
+}
+.Three{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+   gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
+}
+.ThreeTop{
+    display: flex;
+    justify-content: left;
+   gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
+    flex-direction: column;
+}
+.ThreeTopOne{
+    display: flex;
+    justify-content: left;
+}
+.ThreeTopTwo{
+    display: flex;
+    justify-content: left;
+    gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
+
+}
+.ThreeTopOne h3{
+    font-family: var(--lexend);
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: var(--fs-22);
+}
+.ThreeTopTwo{
+       display: flex;
+       justify-content: left;
+     gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
+       flex-direction: column;
+}
+.ThreeTopTwo p{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: var(--lato);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 30%;
+}
+.ThreeBottom{
+    display: flex;
+    flex-direction: column;
+   gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
+    justify-content: left;
+}
+.ThreeBottomOne{
+    display: flex;
+    justify-content: left;
+}
+.ThreeBottomOne p{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: var(--lato);
+}
+.ThreeBottomTwo{
+    display: flex;
+    justify-content: left;
+
+}
+.ThreeBottomTwo p{
+     font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: var(--lato);
+}
+.Four{
+    display: flex;
+    justify-content: left;
+  gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
+
+    flex-direction: column;
+}
+.FourTop{
+    display: flex;
+    justify-content: left;
+}
+.FourTop h3{
+    font-size:var(--fs-22);
+    font-family: var(--lexend);
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.FourBottom{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+.FourBottom p{
+    font-family: var(--lato);
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;    
+    cursor: pointer;
+}
+.FourBottom a, .TwoTopBottom a{
+    text-decoration: none;
+}
+@media (max-width:640px) {
+    .Main{
+        padding: 50px 54px 41.71px 60px;
+    }
+    .Top{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .MainConatiner{
+        gap: 30px;
+    }
+    .One img{
+        width: 100%;
+        height: 100%;
+        min-width: 35px;
+        min-height: 35px;
+        }
+        .TwoTopTop h3{
+            font-size: 20px;
+        }
+        .TwoTopBottom p{
+            font-size: 14px;
+        }
+        .TwoBottomTop h3, .ThreeTopOne h3{
+            font-size: 20px;
+        }
+        .TwoBottomBottom p, .ThreeTopTwo p, .ThreeBottomOne p, .ThreeBottomTwo p{
+            font-size: 14px;
+
+        }
 }

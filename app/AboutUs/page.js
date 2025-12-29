@@ -11,9 +11,9 @@ export default function AboutUs() {
     <>
       <Landing />
       <OurPhilosophy />
-      <OurValues />
+      {/* <OurValues /> */}
       <WhyUs />
-      <Partnerships />
+      {/* <Partnerships /> */}
       <Recognitions />
     </>
   );

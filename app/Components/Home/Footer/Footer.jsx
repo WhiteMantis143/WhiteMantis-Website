@@ -11,18 +11,29 @@ const Footer = () => {
         <div className={styles.MainConatiner}>
           <div className={styles.Top}>
             <div className={styles.One}>
-                <Link href="/">
-              <Image
-                src={Logo}
-                alt="White Mantis Logo"
-                className={styles.LogoImage}
-              />
-                </Link>
+              <Link href="/">
+                <Image
+                  src={Logo}
+                  alt="White Mantis Logo"
+                  className={styles.LogoImage}
+                />
+              </Link>
             </div>
             <div className={styles.Two}>
               <div className={styles.TwoTop}>
-                <h3>Explore</h3>
-                <p>About us</p>
+                <div className={styles.TwoTopTop}>
+                  <h3>Explore</h3>
+                </div>
+                <div className={styles.TwoTopBottom}>
+                  <Link href="/AboutUs">
+                    {" "}
+                    <p>About us</p>
+                  </Link>
+                  <Link href="/contact">
+                    {" "}
+                    <p>Contact us</p>
+                  </Link>
+                </div>
               </div>
               <div className={styles.TwoBottom}>
                 <div className={styles.TwoBottomTop}>
@@ -52,8 +63,10 @@ const Footer = () => {
                 </div>
                 <div className={styles.ThreeTopTwo}>
                   <p>Need to speak with us?</p>
-                  <p>05 8953 5337 </p>
-                  <p>hello@whitemantis.ae </p>
+                  <p>
+                    05 8953 5337 <br />
+                    hello@whitemantis.ae
+                  </p>
                 </div>
               </div>
               <div className={styles.line}></div>
@@ -74,10 +87,14 @@ const Footer = () => {
                 <h3>read our terms</h3>
               </div>
               <div className={styles.FourBottom}>
-                <p>Privacy Policy</p>
-                <p>Returns & Refunds</p>
-                <p>Terms & Conditions</p>
-                <p>Shipping Policy</p>
+                <Link href="/privacy-policy">
+                  <p>Privacy Policy</p>
+                </Link>
+                {/* <p>Returns & Refunds</p> */}
+                <Link href="/terms-and-conditions">
+                  <p>Terms & Conditions</p>
+                </Link>
+                {/* <p>Shipping Policy</p> */}
               </div>
             </div>
           </div>
