@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100svh;
   background: linear-gradient(to right, #6c7a5f 50%, #ffffff 50%);
   padding: clamp(50px, calc(50px + (51 * ((100vw - 320px) / 1120))), 101px)
     clamp(24px, calc(24px + (213 * ((100vw - 320px) / 1120))), 237px)
