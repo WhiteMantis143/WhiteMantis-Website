@@ -15,8 +15,7 @@ const ContactForm = () => {
   const [responseMessage, setResponseMessage] = useState("");
   const [responseError, setResponseError] = useState(false);
 
-  const WP_API_BASE = process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://wordpressbackend.whitemantis.ae/";
-  const ENDPOINT = `${WP_API_BASE.replace(/\/$/, "")}/wp-json/custom/v1/contact`;
+const ENDPOINT = "/api/contact";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
