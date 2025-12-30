@@ -11,88 +11,65 @@
   padding-bottom: 100px;
   background-color: white;
 }
-
-.privacy {
+.MainConatiner{
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: left;
   width: 100%;
-  max-width: 1200px;
-}
-
-.privacy h3 {
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  align-items: flex-start;
-  font-size: var(--fs-48);
-  color: black;
-}
-
-.topContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  padding-bottom: 20px;
-  flex-wrap: wrap;
-}
-
-.mainContent {
-  display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  color: black;
-  
+  gap: 30px;
 }
-.spantext{
-  cursor: pointer;
-  color: #000000;
-  font-size: var(--fs-20);
-
-}
-.spantexttwo{
-  cursor: pointer;
-  color: #424243;
-  font-size: var(--fs-20);
-  text-decoration: underline;
-}
-.textheadings {
+.Heading{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-}
+  justify-content: left;
 
-.listcontent {
-  color: black;
-  padding-left: 20px;
-  list-style-type: disc;
-  list-style-position: inside;
+}
+.Heading h1{
+  font-family: var(--lexend);
+  font-weight: 500;
+  color: #2F362A;
+  text-transform: uppercase;
+  font-size: var(--fs-60);
+}
+.Desc{
+  display: flex;
+  justify-content: left;
+}
+.Desc p{
+  font-family: var(--lato);
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  color: #6E736A;
+}
+.Content{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 15px;
+}
+.Content h3{
+  font-family: var(--lexend);
+  font-size: var(--fs-22);
+  font-weight: 500;
+  color: #2F362A;
+  margin: 0px;
+}
+.Content p{
+  font-family: var(--lato);
+  font-size: 15px;
+  font-weight: 400;
+  color: #6E736A;
+}
+.Content ul {
+  padding-left: 20px;   
   margin: 0;
 }
-
-.listcontent li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  font-size: var(--fs-18);
-  font-weight: 500;
-  color: #000000;
+.Content li {
+  font-family: var(--lato);
+  font-size: 15px;
+  font-weight: 400;
+  color: #6E736A;
 }
-
-
-.privacy p {
-  color: black;
-  line-height: 1.7;
-  margin: 0;
-  font-size: var(--fs-24);
-  font-weight: 500;
-  color: #000000;
-}
-
-
 @media (max-width: 1440px) {
   .mainPage {
     padding-right: 300px;

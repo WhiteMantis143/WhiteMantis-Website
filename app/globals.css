@@ -23,7 +23,9 @@
   --fs-28: clamp(1.13rem, 0.63vi + 0.99rem, 1.75rem);
   --fs-18: clamp(0.88rem, 0.25vi + 0.82rem, 1.13rem);
   --fs-24: clamp(1.13rem, 0.38vi + 1.04rem, 1.5rem);
-  --fs-base: clamp(0.88rem, 0.38vi + 0.79rem, 1.25rem);
+  --fs-20: clamp(0.88rem, 0.38vi + 0.79rem, 1.25rem);
+  --fs-60: clamp(1.75rem, 2.03vi + 1.32rem, 3.75rem);
+  --fs-120: clamp(2.25rem, 5.32vi + 1.12rem, 7.5rem);
 
 
 

@@ -1,0 +1,165 @@
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100svh;
+  background: url("./bg.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.MainConatiner {
+  width: 100%;
+  height: 100%;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.Top {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.Marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.Track h1 {
+  font-family: var(--lexend);
+  font-size: var(--fs-120);
+  font-weight: 600;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  color: #ffffff;
+  white-space: nowrap;
+  opacity: 0.95;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.VideoConatiner {
+  max-width: 396px;
+  max-height: 704px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  /* border: 1px solid #ffffff; */
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.VideoInner {
+  width: calc(100%);
+  height: calc(100%);
+  background: transparent;
+}
+
+.Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .MainConatiner {
+    padding-top: 150px;
+    padding-bottom: 40px;
+  }
+
+  .Top {
+    top: 180px;
+  }
+
+  .Track h1 {
+    font-size: 48px;
+  }
+
+  .VideoConatiner {
+    width: 260px;
+    height: 560px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .MainConatiner {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  .Top {
+    top: 90px;
+  }
+
+  .Track h1 {
+    font-size: 72px;
+  }
+
+  .VideoConatiner {
+    width: 320px;
+    height: 580px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .MainConatiner {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+
+  .Top {
+    top: 110px;
+  }
+
+  .Track h1 {
+    font-size: 100px;
+  }
+
+  .VideoConatiner {
+    width: 360px;
+    height: 640px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .MainConatiner {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+
+  .Top {
+    top: 110px;
+  }
+
+  .Track h1 {
+    font-size: 100px;
+  }
+
+  .VideoConatiner {
+    width: 360px;
+    height: 640px;
+  }
+}
