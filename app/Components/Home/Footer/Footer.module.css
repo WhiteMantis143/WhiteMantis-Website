@@ -107,6 +107,7 @@ justify-content: left;
     gap: 5px;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .TwoBottomBottom p{
     font-size: 15px;
@@ -158,6 +159,12 @@ justify-content: left;
     font-weight: 400;
     font-family: var(--lato);
 }
+.ThreeTopTwo a{
+font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: var(--lato);
+}
 .line{
     width: 100%;
     height: 1px;
@@ -198,6 +205,9 @@ justify-content: left;
   gap: clamp(7px, calc(7px + (8 * ((100vw - 320px) / 1120))), 15px);
 
     flex-direction: column;
+}
+.ThreeBottomTwo a, .ThreeTopTwo a{
+    text-decoration: none;
 }
 .FourTop{
     display: flex;

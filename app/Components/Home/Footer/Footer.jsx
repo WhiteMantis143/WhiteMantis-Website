@@ -39,8 +39,13 @@ const Footer = () => {
                 <div className={styles.TwoBottomTop}>
                   <h3>Follow Us on</h3>
                 </div>
-                <div className={styles.TwoBottomBottom}>
-                  <p>Instagram </p>
+                <Link
+                  href="https://www.instagram.com/whitemantis.ae/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.TwoBottomBottom}
+                >
+                  <p>Instagram</p>
                   <svg
                     width="8"
                     height="8"
@@ -53,7 +58,7 @@ const Footer = () => {
                       stroke="white"
                     />
                   </svg>
-                </div>
+                </Link>
               </div>
             </div>
             <div className={styles.Three}>
@@ -64,8 +69,11 @@ const Footer = () => {
                 <div className={styles.ThreeTopTwo}>
                   <p>Need to speak with us?</p>
                   <p>
-                    05 8953 5337 <br />
-                    hello@whitemantis.ae
+                    <a href="tel:+971589535337">05 8953 5337</a>
+                    <br />
+                    <a href="mailto:hello@whitemantis.ae">
+                      hello@whitemantis.ae
+                    </a>
                   </p>
                 </div>
               </div>
@@ -75,10 +83,16 @@ const Footer = () => {
                   <p>Where can you find us?</p>
                 </div>
                 <div className={styles.ThreeBottomTwo}>
-                  <p>
-                    Warehouse #2 - 26 26th St - Al Qouz Ind.fourth, Al Quoz,
-                    Dubai
-                  </p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Warehouse+%232+-+26+26th+St+-+Al+Quoz+Industrial+Area+4+Dubai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>
+                      Warehouse #2 - 26 26th St - Al Qouz Ind.fourth, Al Quoz,
+                      Dubai
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
