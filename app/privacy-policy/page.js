@@ -150,6 +150,49 @@ const PrivacyPolicy = () => {
             <li>Phone: +971 58 953 5337</li>
           </ul>
         </div>
+        <div className={styles.Desc}>
+          <h3>Mobile Application Privacy Policy</h3>
+          <p>
+            This section applies specifically to the White Mantis mobile application.
+          </p>
+        </div>
+        <div className={styles.Content}>
+          <h3>Information We Collect</h3>
+          <ul>
+            <li>Email address</li>
+            <li>Phone number</li>
+            <li>Account authentication data</li>
+            <li>Order and usage-related information</li>
+          </ul>
+        </div>
+        <div className={styles.Content}>
+          <h3>How We Use This Information</h3>
+          <ul>
+            <li>User authentication and login (OTP-based)</li>
+            <li>Order placement and order history</li>
+            <li>Customer support and communication</li>
+          </ul>
+        </div>
+        <div className={styles.Content}>
+          <h3>Data Sharing</h3>
+          <ul>
+            <li>Data is shared only with our backend services to provide app functionality</li>
+            <li>We do not sell personal data</li>
+          </ul>
+        </div>
+        <div className={styles.Content}>
+          <h3>Data Security</h3>
+          <ul>
+            <li>All data is transmitted via HTTPS</li>
+            <li>Authentication data is securely stored</li>
+          </ul>
+        </div>
+        <div className={styles.Content}>
+          <h3>User Rights</h3>
+          <ul>
+            <li>Users can request account deletion and data removal by contacting us</li>
+          </ul>
+        </div>
       </div>
 
     </div>
