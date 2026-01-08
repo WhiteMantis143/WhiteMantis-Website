@@ -193,6 +193,36 @@ const PrivacyPolicy = () => {
             <li>Users can request account deletion and data removal by contacting us</li>
           </ul>
         </div>
+            <div className={styles.Content}>
+  <h3>Account Deletion & Data Removal</h3>
+  <p>
+    Users have the right to request deletion of their account and associated
+    personal data at any time.
+  </p>
+  <ul>
+    <li>
+      To request account deletion, please contact us at:
+      <strong> hello@whitemantis.ae</strong>
+    </li>
+    <li>
+      Please include your registered email address or phone number for
+      verification purposes.
+    </li>
+    <li>
+      Upon successful verification, we will delete the following data:
+      <ul>
+        <li>User account information</li>
+        <li>Order history</li>
+        <li>Loyalty or reward-related data</li>
+      </ul>
+    </li>
+    <li>
+      Certain information may be retained for legal, tax, or regulatory purposes
+      as required under applicable laws.
+    </li>
+  </ul>
+</div>
+
       </div>
 
     </div>
